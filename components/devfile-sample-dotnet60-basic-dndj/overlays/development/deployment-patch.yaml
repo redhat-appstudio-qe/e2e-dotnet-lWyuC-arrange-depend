@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-dndj
+  namespace: e2e-demos-tmqq-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:096e43b6385f410c55eb629988e6ef79d0939fa7d277deb38f5b2230216c8c9b
+        name: main
+        resources: {}
+status: {}
